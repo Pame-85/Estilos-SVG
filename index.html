@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Estilos SVG</title>
+  </head>
+  <body>
+    <nav>
+      <button class="button"id="button-remove">
+        Estilos SVG 
+      </button>
+      
+    </nav>
+    
+    <!---------------------------Atributos-fill------------------------------------------------------->
+    <svg class="image"id="image-flex" width="600" height="400">
+      <rect x="4" y="100" width="200" height="130" fill="indianred" />
+      <rect x="4" y="250" width="200" height="130" fill="lightcoral" />
+      <rect x="230" y="250" width="200" height="130" fill="salmon" />
+      <circle cx="330" cy="150" r="80" fill="#DC143C" />
+      <ellipse cx="530" cy="230" rx="60" ry="150" fill="#FF0000"/>
+    </svg>
+
+    <!---------------------------Atributos-stroke-line------------------------------------------------>
+    <svg class="image-stroke"id="image-none" width="600" height="400">
+        <rect x="4" y="100" width="200" height="130" fill="#B0C4DE"stroke="#4682B4" stroke-width="5px"stroke-linejoin="round" />
+        <rect x="4" y="250" width="200" height="130" fill="#87CEEB"stroke="#1E90FF" stroke-width="5px"stroke-linejoin="bevel" />
+        <rect x="230" y="250" width="200" height="130" fill="#6495ED"stroke="#4169E1" stroke-width="5px"stroke-linejoin="miter" />
+        <circle cx="330" cy="150" r="80" fill="#0000CD"stroke="#000080" stroke-width="5px" />
+        <ellipse cx="530" cy="230" rx="60" ry="150" fill="#191970"stroke="#B0C4DE" stroke-width="5px" />
+        <line x1="100" y1="100"x2="200"y2="228" class="line"/>
+      </svg>
+
+
+      <button class="refresh"id="refresh-button">Restablecer imagen</button>
+    
+      <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+.button {
+  width: 800px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-left: 450px;
+  border: 1px solid #f13b3b; /*anchura, estilo y color borde*/
+  padding: 1px; /*espacio alrededor texto*/
+  background-color: #fc7d7d; /*color botón*/
+  color: #ffffff; /*color texto*/
+  /*text-decoration: none; /*decoración texto*/
+  text-transform: uppercase; /*capitalización texto*/
+  font-family: "Helvetica", sans-serif; /*tipografía texto*/
+  font-size: 20px;
+  border-radius: 50px; /*bordes redondos*/
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  margin-left: 450px;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 09%;
+  background: rgba(255, 255, 255, 0.555);
+  transition: all 1s ease;
+}
+.button:hover:before {
+  width: 810px;
+}
+.button:hover {
+  background-color: rgb(78, 50, 231);
+  border: 1px solid rgb(21, 8, 92);
+}
+.refresh {
+  width: 150px;
+  height: 35px;
+  margin-left: 1109px;
+  margin-bottom: 50px;
+  padding: 1px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: 2px solid#939292;
+  border-radius: 5px;
+  color: #535353;
+}
+
+.line {
+  stroke: #160d63;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  margin-left:300px;
+}
+.image {
+  padding: 100px;
+  border: 5px solid #939292;
+  margin-left: 450px;
+}
+.image-stroke {
+  padding: 100px;
+  border: 5px solid #939292;
+  margin-left: 450px;
+}
