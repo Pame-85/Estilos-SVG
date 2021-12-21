@@ -12,6 +12,7 @@
   font-family: "Helvetica", sans-serif; /*tipografía texto*/
   font-size: 20px;
   border-radius: 50px; /*bordes redondos*/
+  cursor: pointer;
 }
 
 .button:before {
@@ -44,21 +45,63 @@
   border: 2px solid#939292;
   border-radius: 5px;
   color: #535353;
+  cursor: pointer;
 }
 
 .line {
   stroke: #160d63;
   stroke-width: 5px;
   stroke-linecap: round;
-  margin-left:300px;
+  margin-left: 300px;
 }
 .image {
   padding: 100px;
   border: 5px solid #939292;
   margin-left: 450px;
+  display: flex;
 }
 .image-stroke {
   padding: 100px;
   border: 5px solid #939292;
   margin-left: 450px;
+  flex-direction: row;
+}
+
+/*----------------------------Media Query---------------------------------*/
+
+@media (max-width: 599px) {
+  .image {
+    width: 50%;
+    height: 500px;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 9px 9px;
+  }
+
+  .image-stroke {
+    width: 50%;
+    height: 500px;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 9px 9px;
+  }
+
+  .rect-three {
+    display: none;
+  }
+  .circle-one {
+    display: none;
+  }
+  .ellipse-one {
+    display: none;
+  }
+
+  .button {
+    width: 57%;
+    margin-left: 20px;
+  }
+  .refresh {
+    width: 57%;
+    margin-left: 20px;
+  }
 }
